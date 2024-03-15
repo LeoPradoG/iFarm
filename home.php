@@ -43,45 +43,130 @@
 <div class="div_br"></div>
 
 
-<div class="div_br"></div>
-<div class="div_br"></div>
+<div style="width: 100%; background-color: #8AB594; height: 100vh; border-radius: 50px 50px 0 0;">
 
-<div style="width: 100%; background-color: #f8f6f6; min-height: 100%; padding: 1% 5% 5% 5%;">
 
-    <div class="row">
-            
-        <label style="font-size: 17px; color: #a9a9a9; font-weight: bold;">Administração</label>
-        <div class="efeito-zoom mr-3 mt-3" style="border-radius: 10px; cursor: pointer; width: 160px; height: 140px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ">
+    <div style="padding: 30px 30px 20px 30px; width:100%; height: 5%; display: flex; text-align:center; align-items: center; justify-content: center;">
 
-            <div style="width: 100%; height: 20%; text-align: center; padding-top: 5%;">Configurações</div>
-            <div onclick="redirect_user(1)" style="width: 100%; height: 80%; position: relative;">
-                <div style=" color: #46606E;width: 100%; position: absolute; bottom: 0; padding-left: 10%; padding-bottom: 3%; font-size: 45px;">
-                    <i class="fa-solid fa-gear"></i>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="efeito-zoom mr-3 mt-3" style="border-radius: 10px; margin-left: border-radius: 10px; cursor: pointer; width: 160px; height: 140px; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; ">
-
-            <div style="width: 100%; height: 20%; text-align: center; padding-top: 5%;">Metas</div>
-            <div onclick="redirect_user(2)"style="width: 100%; height: 80%; position: relative;">
-                <div style="color: #46606E; width: 100%; position: absolute; bottom: 0; padding-left: 10%; padding-bottom: 3%; font-size: 45px;">
-                    <i class="fa-solid fa-hand-holding-dollar"></i>
-                </div>
-            </div>
-
-        </div>
-
+        <span style="font-weight: bold; color:#362B1D; font-size: 20px;">Bem Vindo!</span>
 
     </div>
+
+    <div style="padding: 30px 30px 20px 30px; width:100%; height: 5%; display: flex; text-align:center; align-items: center; justify-content: center;">
+
+    <span style="font-weight: bold; color:#44604A; font-size: 20px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">Santo Rancho</span>
+
+    </div>
+
+    <div style="padding: 30px 30px 30px 30px; width:100%;">
+
+        <div class="row">
+            
+            <div style="padding: 5px 30px 5px 30px; width:100%;">
+
+                <div style="width: calc(50% - 5px); height: 150px; float: left; border: solid 1px #44604a63; border-radius: 10px; margin-right: 10px; background-color: #44604a63; ">
+                    <div style="width: 100%; height: 20%; text-align: center;"><span style="font-weight: bold; color:#212529; font-size: 20px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">Novo Animal</span></div>
+                    <div style="width: 100%; height: 80%; font-size: 80px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-cow"></i>
+                    </div>
+                </div>
+
+                <div style="width: calc(50% - 5px); height: 150px; float: left; border: solid 1px #44604a63; border-radius: 10px; background-color: #44604a63;">
+                    <div style="width: 100%; height: 20%; text-align: center;"><span style="font-weight: bold; color:#212529; font-size: 20px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">Consultar</span></div>
+                    <div style="width: 100%; height: 80%; font-size: 80px; text-align: center; display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="div_br"></div>
+        <div class="div_br"></div>
+
+
+        <div class="centralizar">
+        <span style="font-weight: bold; color:#44604A; font-size: 20px; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);">DashBoard</span>
+        </div>
+
+        <div class="div_br"></div>
+        <div class="div_br"></div>
+
+        <div style="border: solid 1px #44604a63; border-radius: 10px; margin-right: 10px; background-color: #44604a63;">
+        <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+
+    
+    
+    <!--<section class="section">
+    <div class="container">
+
+      <div class="columns">
+
+            <div class="column is-four-fifths">
+
+            <video autoplay id="video"></video>
+
+            <button class="button is-hidden" id="btnPlay">
+
+                <span class="icon is-small">
+                <i class="fas fa-play"></i>
+                </span>
+
+            </button>
+
+            <button class="button" id="btnChangeCamera">
+                <span class="icon">
+                <i class="fas fa-sync-alt"></i>
+                </span>
+                <span>Switch camera</span>
+            </button>
+            </div>
+
+
+      </div>
+
+    </div>
+
+  </section>-->
 </div>
 
 
-
-
-
 <script>
+
+     // Dados do gráfico
+     var data = {
+        labels: ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho'],
+        datasets: [{
+            label: 'Vendas',
+            data: [12, 19, 3, 5, 2, 25, 35],
+            backgroundColor: '#362b1dd6', // Cor de fundo
+            borderColor: '#362b1dd6', // Cor da borda
+            borderWidth: 1
+        }]
+    };
+
+    // Opções de configuração do gráfico
+    var options = {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    };
+
+    // Criar o gráfico
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar', // Tipo de gráfico (pode ser 'bar', 'line', 'pie', etc.)
+        data: data,
+        options: options
+    });
+
 
 
     function ExitTheSystem() {
@@ -95,14 +180,91 @@
 
     }
 
-    function redirect_user(parameter){
 
-        if(parameter == 1){
+    (function () {
 
-            window.location.href = "configuracoes.php";
-
+        if(
+            !"mediaDevices" in navigator ||
+            !"getUserMedia" in navigator.mediaDevices
+        ) {
+            alert("Serviço de Camera Não suportado!");
+            return;
         }
-    }
+
+        // get page elements
+        const video = document.querySelector("#video");
+        const btnPlay = document.querySelector("#btnPlay");
+        const btnChangeCamera = document.querySelector("#btnChangeCamera");
+        const devicesSelect = document.querySelector("#devicesSelect");
+
+        // video constraints
+        const constraints = {
+
+            video: {
+            width: {
+                min: 1280,
+                ideal: 1920,
+                max: 2560,
+            },
+
+            height: {
+                min: 720,
+                ideal: 1080,
+                max: 1440,
+            },
+            },
+
+        };
+
+        // Camera Frontal
+        let useFrontCamera = true;
+
+        // Camera Traseira
+        let videoStream;
+
+        // handle events
+        // play
+        btnPlay.addEventListener("click", function () {
+            video.play();
+            btnPlay.classList.add("is-hidden");
+            btnPause.classList.remove("is-hidden");
+        });
+
+
+        // switch camera
+        btnChangeCamera.addEventListener("click", function () {
+            useFrontCamera = !useFrontCamera;
+
+            initializeCamera();
+        });
+
+        // stop video stream
+        function stopVideoStream() {
+            if (videoStream) {
+            videoStream.getTracks().forEach((track) => {
+                track.stop();
+            });
+            }
+        }
+
+        // initialize
+        async function initializeCamera() {
+            stopVideoStream();
+            constraints.video.facingMode = useFrontCamera ? "user" : "environment";
+
+            try {
+            videoStream = await navigator.mediaDevices.getUserMedia(constraints);
+            video.srcObject = videoStream;
+            } catch (err) {
+            alert("Could not access the camera");
+            }
+        }
+
+    initializeCamera();
+
+})();
+
+
 
 </script>
 

@@ -22,9 +22,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="img/Quantum.png">
+    <link rel="icon" href="img/cow.png">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Quantum</title>
+    <title>iFarm</title>
     <!--CSS-->
     <?php 
         include 'css/style.php';
@@ -103,25 +103,9 @@
                     
                     <div class="div_br"></div>
                     <div class="div_br"></div>
-                    
-                    
-
-                    <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex;">
-
-                    <div style="padding-left: 5%; width: 25%; margin-right: 10px;">
-                  
-                        <i class="fa-solid fa-key"style="font-size: 25px;" ></i>
-
-                    </div>
-
-                    <div style="width: 75%;">
-                        Trocar Senha
-                    </div>
-
-                    </div>
 
 
-                    <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex;">
+                    <div class="side_efect" style="cursor: pointer; width: 100%; padding-top: 10%; padding-bottom: 5%; border-top: solid 1px white; display: flex; align-items: center; justify-content: center;">
 
                         <div style="padding-left: 5%; width: 25%; margin-right: 10px;">
 

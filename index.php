@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum</title>
+    <title>iFarm</title>
     
-    <link rel="shortcut icon" type="image/x-icon" href="img/Quantum.png">
+    <link rel="shortcut icon" type="image/x-icon" href="img/cow.png">
 
     <!-- Bootstrap CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary" onclick="AjaxUpdatePassWord()" style="background-color: #5c0ae9 !important; border-color: #5c0ae9 !important;">Salvar</button>
+                    <button type="button" class="btn btn-primary" onclick="AjaxUpdatePassWord()" style="background-color: #6897ef !important; border-color: #6897ef !important;">Salvar</button>
                 </div>
             </div>
         </div>
@@ -73,14 +73,14 @@
 
                                 <div style="width: 100%; text-align: center;">
 
-                                    <img style="max-width:200px; max-height:150px; width: auto; height: auto;" src="img/Quantum.png" />
+                                    <img style="max-width:200px; max-height:150px; width: auto; height: auto;" src="img/cow.png" />
 
                                 </div>
 
                                 <div class="div_br"></div>
                                 <div class="div_br"></div>
                                 <div class="centralizar">
-                                    <span style="font-weight: bold; color:#999494; font-size: 25px;">Quantum</span>
+                                    <span style="font-weight: bold; color:#999494; font-size: 25px;">iFarm</span>
                                 </div>
                                 <div class="div_br"> </div>
                                 <div class="div_br"> </div>
@@ -103,6 +103,12 @@
 
                             <div class="row justify-content-center">
                                 <button type="submit" onclick="ajax_valida_login()" id="acessarButton" class="botao_home" style="padding-top: 14px; padding-bottom: 14px;"> <i class="fa fa-key" aria-hidden="true"></i> Acessar</button>
+                            </div>
+
+                            <div class="div_br"> </div>
+
+                            <div class="centralizar">
+                                    <span style="font-weight: bold; color:#8AB594; font-size: 15px; cursor: pointer;">Cadastrar-se</span>
                             </div>
 
                             <div class="div_br"> </div>
@@ -285,9 +291,10 @@
                             document.getElementById('Msg').style.right = "0";
                             document.getElementById('Msg').innerHTML = '<i class="fa-solid fa-check"></i>   Senha alterada com Sucesso!';
                             document.getElementById('Msg').style.backgroundColor = "#DFF2BF";
-
+                            document.getElementById('Msg').style.color = "#270";
+                        
                             setTimeout(function() {
-                                document.getElementById('Msg').style.right = "-450px";
+                                document.getElementById('Msg').style.right = "-100%";
                             }, 1500); // 60000 milissegundos = 1 minuto
 
                             document.getElementById('senha').value = '';
@@ -304,7 +311,7 @@
 
                             setTimeout(function() {
 
-                                document.getElementById('Msg').style.right = "-450px";
+                                document.getElementById('Msg').style.right = "-100%";
 
                                 setTimeout(function() {
 

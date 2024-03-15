@@ -27,8 +27,8 @@ body{
     padding-top: 20px;
     padding-left: 0px !important;
     padding-right: 0px !important;
-    padding-bottom: 20px;
     min-height: 91vh;
+    background-color: #362b1dd6;
     /*max-width: 90% !important;*/
 }
 
@@ -241,8 +241,8 @@ p,li{
     background-color: #8E7C68;
 	font-size: 14px;
 	font-weight: bold;
-    background-color: #8E7C68; 
-    border-color: #8E7C68;
+    background-color: #8AB594; 
+    border-color: #8AB594;
 
     animation: efeitozoomhome 1600ms infinite; 
 }
