@@ -151,10 +151,23 @@
     };
 
     // Opções de configuração do gráfico
+
     var options = {
+        plugins: {
+            legend: {
+                labels: {
+                    color: 'white' // Define a cor do texto da label
+                }
+            }
+        },
         scales: {
             y: {
                 beginAtZero: true
+            },
+            x: {
+                ticks: {
+                    color: 'white' // Define a cor do texto dos rótulos do eixo x
+                }
             }
         }
     };
